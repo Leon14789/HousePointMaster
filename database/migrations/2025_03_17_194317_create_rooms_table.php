@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('class');
             $table->string('image');
-            $table->integer('position');
             $table->integer('point');
             $table->timestamps();
         });
