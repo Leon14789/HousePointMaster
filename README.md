@@ -22,7 +22,7 @@ O projeto foi construído utilizando **Laravel (PHP), MySQL, HTML5, CSS e Bootst
 
 ### 1️⃣ Clone o repositório:
 ```bash
-  git clone [URL_DO_REPOSITORIO]
+  git clone https://github.com/Leon14789/HousePointMaster
   cd HousePointMaster
 ```
 
@@ -62,4 +62,4 @@ Esse projeto foi uma grande oportunidade para aprimorar habilidades em **desenvo
 **Desenvolvido com 💙 por [Leonardo Ortiz Alves]**
 
 
-
+.

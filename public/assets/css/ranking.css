@@ -1,0 +1,71 @@
+.ranking-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background-color: #cecece;
+}
+
+.ranking-item.bg-gold {
+    background-color:rgb(255, 255, 6);
+    border-color:rgb(202, 202, 16);
+}
+
+.ranking-item.bg-silver {
+    background-color: #a0a0a0;  
+    border-color: #a8a8a8;
+}
+
+.ranking-item.bg-bronze {
+    background-color: #FF8C00;
+    border-color: #FF8C00;
+}
+
+.ranking-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ranking-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ranking-name h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.ranking-bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 5px;
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.ranking-bar .bar {
+    height: 100%;
+    background-color: #3b82f6; /* Cor da barra */
+    border-radius: 5px;
+}
+
+.ranking-points p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6b7280;
+}

@@ -8,17 +8,11 @@ use Illuminate\Http\Request;
 class RoomController extends Controller
 {
 
-    public function ranking()
+    public static function ranking()
     {
-        $rooms = Room::orderBy('point', 'desc')->get();
+        $data = RankingController::ShowRanking();
     
-        $maxPoints = $rooms->max('point');
-    
-        if ($maxPoints == 0) {
-            $maxPoints = 1;
-        }
-    
-        return view('dashboard', compact('rooms', 'maxPoints'));
+        return view('dashboard', compact('data'));
     }
 
     /**
@@ -83,7 +77,7 @@ class RoomController extends Controller
     public function destroy(Room $room)
     {
         $room->delete();
-        return redirect()->route('dashboard')->with('error', 'Turma Deletada com sucesso!');
+        return redirect()->route('dashboard')->with('success', 'Turma Deletada com sucesso!');
 
     }
 }

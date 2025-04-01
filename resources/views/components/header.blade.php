@@ -33,7 +33,7 @@
                          </a>
                      </div>
                      <div class="d-flex">
-                         <a href="#" class="w-50 pr-3">
+                         <a href="https://eteceliasmigueljunior.cps.sp.gov.br/" class="w-50 pr-3" target="_blank">
                              <div class="card border-0 border-bottom-yellow shadow-lg shadow-hover">
                                  <div class="card-body text-center">
                                      <div class="text-center">

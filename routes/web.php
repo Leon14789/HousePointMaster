@@ -2,11 +2,15 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RoomController;
+use App\Http\Controllers\WellcomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', [WellcomeController::class, 'index']);
+
 
 Route::get('/dashboard', [RoomController::class, 'ranking'])
 ->middleware(['auth', 'verified'])->name('dashboard');
